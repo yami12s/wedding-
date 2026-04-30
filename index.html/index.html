@@ -10,6 +10,7 @@
             --bg-color: #f8f4f0;
             --card-bg: #fff;
             --accent-color: #c5a059;
+            --dark-gold: #b8860b;
             --text-dark: #2c2c2c;
             --border-color: #e8dfd0;
             --envelope-color: #f1eae0;
@@ -69,42 +70,82 @@
         #envelope-wrapper.open + .invitation-container { opacity: 1; transform: scale(1); }
 
         .invitation-card {
-            background: #fff; width: 90%; max-width: 550px; padding: 50px 20px;
+            background: #fff; width: 95%; max-width: 580px; padding: 60px 25px;
             text-align: center; border: 15px solid #fff; outline: 1px solid var(--border-color);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-radius: 180px 180px 30px 30px; margin: auto;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.06); border-radius: 200px 200px 35px 35px; margin: auto;
         }
 
-        .bismillah { font-family: 'Reem Kufi', sans-serif; font-size: 1.4rem; color: var(--accent-color); margin-bottom: 15px; display: block; }
-        .decorative-intro { font-size: 1.1rem; color: var(--accent-color); margin-bottom: 25px; }
-        .couple-names-row { display: flex; justify-content: center; align-items: center; gap: 15px; margin: 20px 0; flex-wrap: wrap; }
-        .couple-names-row span { font-family: 'Amiri', serif; font-weight: 700; font-size: 1.8rem; color: #1a1a1a; }
-        .wedding-rings-img { width: 80px; height: auto; object-fit: contain; }
-        .doctor-quote { font-style: italic; color: #8a703d; font-size: 1rem; margin-top: -10px; margin-bottom: 20px; }
-        .message { font-size: 1.1rem; margin: 25px 0; line-height: 1.8; color: #555; padding: 0 20px; }
+        .bismillah { font-family: 'Reem Kufi', sans-serif; font-size: 1.5rem; color: var(--accent-color); margin-bottom: 20px; display: block; }
+        
+        /* الآية القرآنية بالذهبي */
+        .quran-section { margin-bottom: 30px; padding: 0 10px; border-bottom: 1px double var(--border-color); padding-bottom: 20px; }
+        .quran-verse { 
+            font-family: 'Amiri', serif; 
+            font-size: 1.4rem; 
+            color: var(--dark-gold); 
+            line-height: 1.8; 
+            font-weight: bold; 
+        }
 
-        .countdown-container { margin: 25px 0; display: flex; justify-content: center; gap: 8px; direction: ltr; }
-        .countdown-item { background: #fdfaf5; padding: 10px 5px; border-radius: 10px; min-width: 55px; border: 1px solid #eee; }
-        .countdown-num { font-size: 1.2rem; font-weight: bold; display: block; color: var(--accent-color); }
-        .countdown-label { font-size: 0.6rem; color: #999; }
+        .couple-names-row { display: flex; justify-content: center; align-items: center; gap: 15px; margin: 25px 0; flex-wrap: wrap; }
+        .couple-names-row span { font-family: 'Amiri', serif; font-weight: 700; font-size: 2rem; color: #1a1a1a; }
+        .wedding-rings-img { width: 90px; height: auto; object-fit: contain; }
+        .doctor-quote { font-style: italic; color: #8a703d; font-size: 1.1rem; margin-top: -10px; margin-bottom: 20px; }
+        .message { font-size: 1.2rem; margin: 25px 0; line-height: 2; color: #555; padding: 0 25px; }
 
-        .event-section { background-color: #fcfaf7; padding: 18px; border-radius: 15px; margin: 15px 0; border: 1px solid #f0e6d6; }
-        .event-title { color: var(--accent-color); font-weight: bold; margin-bottom: 10px; display: block; font-size: 1.3rem; }
-        .details-box { border-top: 1px solid var(--text-dark); border-bottom: 1px solid var(--text-dark); display: inline-block; padding: 8px 30px; }
-        .date-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 15px; font-size: 1.1rem; }
+        .countdown-container { margin: 25px 0; display: flex; justify-content: center; gap: 10px; direction: ltr; }
+        .countdown-item { background: #fffcf8; padding: 10px 5px; border-radius: 12px; min-width: 60px; border: 1px solid #f1eae0; }
+        .countdown-num { font-size: 1.4rem; font-weight: bold; display: block; color: var(--accent-color); }
+        .countdown-label { font-size: 0.7rem; color: #999; font-weight: bold; }
 
-        .venue { margin-top: 20px; font-size: 1.1rem; }
-        .address { font-size: 1rem; color: #444; margin-top: 5px; font-weight: bold; }
+        /* --- تعديل عبارة بمشيئة الله (أنحف وأكثر أناقة) --- */
+        .will-of-god-header {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400; /* تقليل السماكة لتكون رقيقة */
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: block;
+            color: var(--dark-gold);
+            letter-spacing: 1px;
+            text-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+        }
 
-        /* --- قسم التهنئة الجديد --- */
-        .greeting-box { margin-top: 40px; padding: 25px; background: #fff; border: 1px solid var(--border-color); border-radius: 20px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
-        .greeting-box h3 { font-family: 'Reem Kufi', sans-serif; color: var(--accent-color); margin-bottom: 15px; font-size: 1.3rem; }
-        .input-field { width: 90%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 10px; font-family: 'Amiri'; text-align: center; outline: none; transition: 0.3s; }
-        .send-btn { background-color: var(--accent-color); color: white; border: none; padding: 12px 40px; border-radius: 25px; font-family: 'Amiri'; font-weight: bold; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
-        .send-btn:disabled { background-color: #ccc; cursor: not-allowed; }
+        .event-section { background-color: #fffdfa; padding: 22px; border-radius: 20px; margin-bottom: 25px; border: 1px solid #f1eae0; }
+        .event-title { color: var(--accent-color); font-weight: bold; margin-bottom: 12px; display: block; font-size: 1.4rem; }
+        .details-box { border-top: 1px solid var(--text-dark); border-bottom: 1px solid var(--text-dark); display: inline-block; padding: 10px 40px; }
+        .date-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 20px; font-size: 1.2rem; }
 
-        .map-btn { display: inline-block; margin: 25px 0; padding: 12px 35px; background-color: var(--accent-color); color: white; text-decoration: none; border-radius: 30px; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3); }
+        .venue { margin-top: 25px; font-size: 1.2rem; }
+        .address { font-size: 1.1rem; color: #444; margin-top: 8px; font-weight: bold; }
+        
+        .notes-group {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border-color);
+            line-height: 1.8;
+        }
+        .styled-note {
+            font-style: italic;
+            color: #8a703d;
+            font-size: 1.05rem;
+            display: block;
+            margin: 5px 0;
+        }
 
-        @media (max-width: 600px) { .invitation-card { padding: 40px 15px; } .couple-names-row span { font-size: 1.4rem; } }
+        .greeting-box { margin-top: 40px; padding: 25px; background: #fff; border: 1px solid var(--border-color); border-radius: 25px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
+        .greeting-box h3 { font-family: 'Reem Kufi', sans-serif; color: var(--accent-color); margin-bottom: 15px; font-size: 1.4rem; }
+        .input-field { width: 92%; padding: 14px; margin-bottom: 12px; border: 1px solid #eee; border-radius: 12px; font-family: 'Amiri'; text-align: center; outline: none; font-size: 1.1rem; }
+        .send-btn { background-color: var(--accent-color); color: white; border: none; padding: 14px 50px; border-radius: 30px; font-family: 'Amiri'; font-weight: bold; cursor: pointer; font-size: 1.2rem; transition: 0.3s; }
+
+        .map-btn { display: inline-block; margin: 30px 0; padding: 14px 45px; background-color: var(--accent-color); color: white; text-decoration: none; border-radius: 35px; font-size: 1rem; font-weight: bold; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3); }
+
+        @media (max-width: 600px) { 
+            .invitation-card { padding: 45px 15px; } 
+            .couple-names-row span { font-size: 1.6rem; } 
+            .quran-verse { font-size: 1.15rem; } 
+            .will-of-god-header { font-size: 1.4rem; }
+        }
     </style>
 </head>
 <body>
@@ -121,9 +162,16 @@
         <div class="invitation-card">
             
             <span class="bismillah">﷽</span>
-            <div class="decorative-intro">﴿ وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾</div>
- <p class="message">
-"تزدان الأيام بالأفراح، وتكتمل الأفراح بلقاء الأحبة. يسعدنا ويشرفنا دعوتكم لحضور حفل زفاف، لنحتفي سوياً ببداية حياةٍ جديدة. حضوركم شرفٌ يكتمل به ليلتنا."            </p>
+            
+            <div class="quran-section">
+                <p class="quran-verse">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+            </div>
+
+            <p class="message">
+"تزدان الأيام بالأفراح، وتكتمل الأفراح بلقاء الأحبة. يسعدنا ويشرفنا دعوتكم لحضور حفل زفاف، لنحتفل سوياً ببداية حياةٍ جديدة. حضوركم شرفٌ يكتمل به ليلتنا."            </p>
+
+            <!-- العبارة المحدثة هنا -->
+            <span class="will-of-god-header">وذلك بمشيئة الله تعالى</span>
 
             <div class="couple-names-row">
                 <span>الدكتور ربيع</span>
@@ -134,14 +182,14 @@
             <div class="doctor-quote">"وصفة السعادة لا تكتمل إلا بوجودكم.. حضوركم هو الترياق الذي يملأ قلوبنا فرحاً"</div>
 
             <div class="event-section">
-                <span class="event-title">حفل الزفاف</span>
+                <span class="event-title">حفل الزفاف في منزل والد العريس </span>
                 <div class="details-box">
                     <div class="date-grid">
                         <span>الأحد</span>
-                        <span style="font-size: 1.8rem; font-weight: bold;">10</span>
+                        <span style="font-size: 2rem; font-weight: bold;">10</span>
                         <span>06:00</span>
                     </div>
-                    <div>مايو 2026</div>
+                    <div style="margin-top: 5px;">مايو 2026</div>
                 </div>
             </div>
 
@@ -153,20 +201,25 @@
             </div>
 
             <div class="event-section">
-                <span class="event-title">حفلة الشباب</span>
+                <span class="event-title"> حفلة الشباب في منزل والد العريس</span>
                 <div class="date-grid">
                     <span>الجمعة</span>
                     <span style="font-weight: bold;">08 مايو</span>
-                    <span>بعد المغرب</span>
+                    <span>بعد صلاة المغرب</span>
                 </div>
             </div>
 
             <div class="venue">
                 <strong>الموقع</strong>
-                <div class="address">العنوان - النصيرات - مخيم 2 <br> - بالقرب من منتدى التواصل</div>
+                <div class="address">العنوان في منزل والد العريس - النصيرات - مخيم 2 <br> - بالقرب من منتدى التواصل</div>
             </div>
 
             <a href="https://maps.app.goo.gl/DZwQ39pPC6CzLAEJ6" target="_blank" class="map-btn">📍 عرض الموقع على الخريطة</a>
+
+            <div class="notes-group">
+                <span class="styled-note">📸 نرجو عدم التصوير بالجوال</span>
+                <span class="styled-note">❤️ نرجو نوماً هنيئاً لأطفالكم</span>
+            </div>
 
             <div class="greeting-box">
                 <h3>أرسل تهنئة للعروسين ✍️</h3>
@@ -186,7 +239,7 @@
     </audio>
 
     <script>
-        const flowers = ['🌸', '🌹', '🤍', '✨'];
+        const flowers = ['🌸', '🌹', '💕', '🍁'];
 
         function createPetal() {
             const petal = document.createElement('div');
